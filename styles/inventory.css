@@ -1,0 +1,41 @@
+form{
+    
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: aliceblue;
+    margin-bottom: 20px;
+}
+input{
+    display: block;
+    margin-bottom: 10px;
+    height: 30px;
+}
+h1{
+    text-align: center;
+}
+
+button{
+    padding: 10px;
+    background-color: #D4A017;
+    color: #1B2A41;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: #1B2A41;
+    color: #D4A017;
+    cursor: pointer;
+}
+
+@media(min-width: 768px){
+    form{
+        width: 50%;
+    }
+    input{
+        width: 80%;
+    }
+}

@@ -1,0 +1,167 @@
+*{
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+body{
+    background-color: #F5F5F5;
+    margin: 0;
+}
+nav{
+    background-color: white;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+nav img{
+    height: 100px;
+    width: 100px;
+    margin-left: 10px;
+}
+nav p{
+    font-weight: bold;
+    font-size: 22px;
+    display: none;
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    padding:0;
+}
+nav ul li{
+    
+    list-style-type: none;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #1B2A41;
+    font-size:25px;
+    font-weight: 500;
+}
+
+main{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+main >h2{
+    margin-left: 16px;
+}
+
+#sale-box{
+    background-color: #1B2A41;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: 1400px;
+}
+#sale-box img {
+    width:300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+    flex-shrink: 0;
+}
+#sale-box p:first-of-type{
+    
+    color: #1B2A41;
+    background-color: #D4A017;
+    border-radius: 10px;
+    display: inline ;
+    padding: 5px
+}
+
+#sale-box h2{
+    color: white;
+}
+
+#sale-box p{
+    color: white;
+}
+
+.discount-box{
+    background-color: antiquewhite;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    width: 90%;
+    max-width: 1600px;
+    gap: 16px 10% ;
+}
+
+.discount{
+    width: 100%;
+    max-width: 200px;
+}
+.discount img{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.discount div{
+    background-color: white;
+    padding: 8px;
+}
+.discount .price{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.discount .price span{
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: line-through;
+}
+
+.discount button{
+    background-color: #D4A017;
+    border: none;
+    color: #1B2A41;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.discount button:hover{
+    background-color: #1B2A41;
+    color: #D4A017;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #1B2A41;
+    color:white;
+    height: auto;
+    padding-top: 15px;
+    padding-left: 25px;
+    
+}
+
+@media(min-width: 768px){
+    .discount-box{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(min-width: 1024px){
+    .discount-box{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    main>h2{
+        margin-left: 111px;
+    }
+}

@@ -2,10 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinlanda</title>
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/inventory.css">  
+    <script src="../script.js" defer></script>
 </head>
 <body>
-    <
+    <header>
+        <nav>
+            <img src="../favicon/android-chrome-192x192.png">
+            <p>Vinlanda</p>
+            <ul>
+                <li><a href="../index.html">Sales</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="documentation.html">How to Use Our Site</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Inventory</h1>
+        <!-- add PHP action -->
+        <form method="post" action="">
+            <fieldest>
+                <legend>Add an Product</legend>
+                <label>Product Name
+                    <input type="text" name="name" required>
+                </label>
+
+                <label>ID
+                    <input type="text" name="id" required>
+                </label>
+
+                <label>Quantity
+                    <input type="number" min="0" step="1" name="quantity" required>
+                </label>
+
+                <label>Price per unit
+                    <input type="number" min="0" name="quantity" required>
+                </label>
+
+                <fieldset>
+                    <legend>Product Image</legend>
+                
+                    <label>Image Path
+                    <input type="text" name="path">
+                    </label>
+                    <label>
+                        Image text
+                        <input type="text" name="alt">
+                    </label>
+                    <label>Image source
+                        <input type="text" name="source">
+                    </label>
+                </fieldset>
+            </fieldest>
+
+            <fieldset>
+                <legend>Add Discount</legend>
+
+                <label>
+                    Product ID
+                    <input type="text" name="discountId">
+                </label>
+
+                <label>
+                    Percentage Discounted
+                    <input type="number" max="100" min="0.15" name="percentage">
+                </label>
+
+            </fieldset>
+
+            <button type="submit" id="submitForm">Add</button>
+            <button type="reset" id="clearForm">Clear</button>
+            
+        </form>
+    </main>
+
+    <footer>
+        <h2>Vinlanda</h2>
+        <p>Strong Computer. Strong Discount</p>
+        <p>&copy; 2026 Vinlanda. All rights reserved.</p>
+    </footer>
 </body>
 </html>
