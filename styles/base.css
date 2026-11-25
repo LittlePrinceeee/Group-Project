@@ -25,7 +25,13 @@ nav img{
 nav p{
     font-weight: bold;
     font-size: 22px;
+}
+nav p:first-of-type{
     display: none;
+}
+nav ul ~ p{
+    margin-left: auto;
+    margin-right: 15px;
 }
 nav ul{
     display: flex;
@@ -43,6 +49,10 @@ nav ul li a{
     color: #1B2A41;
     font-size:25px;
     font-weight: 500;
+}
+
+nav p{
+    color: #1B2A41;
 }
 
 main{
@@ -92,7 +102,7 @@ main >h2{
 }
 
 .discount-box{
-    background-color: antiquewhite;
+    
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -100,11 +110,13 @@ main >h2{
     width: 90%;
     max-width: 1600px;
     gap: 16px 10% ;
+    margin-bottom: 20px;
 }
 
 .discount{
     width: 100%;
     max-width: 200px;
+    
 }
 .discount img{
     width: 100%;
@@ -142,6 +154,10 @@ main >h2{
     cursor: pointer;
 }
 
+.discount .id, .discount .quantity{
+    font-size: 12px;
+    color: #1B2A41;
+}
 footer{
     background-color: #1B2A41;
     color:white;
@@ -152,12 +168,21 @@ footer{
 }
 
 @media(min-width: 768px){
+
+    nav p{
+        margin-right: 15px;
+    }
+    
     .discount-box{
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media(min-width: 1024px){
+
+    nav p:first-of-type{
+        display: block;
+    }
     .discount-box{
         grid-template-columns: repeat(4, 1fr);
     }
