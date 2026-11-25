@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- add PHP action -->
+    <form method="post" action="">
+        <fieldest>
+            <legend>Add an Product</legend>
+            <label>Product Name
+                <input type="text" name="name">
+            </label>
+
+            <label>ID
+                <input type="text" name="id">
+            </label>
+
+            <label>Quantity
+                <input type="number" min="0" step="1" name="quantity">
+            </label>
+
+            <label>Price per unit
+                <input type="number" min="0" name="price">
+            </label>
+
+            <fieldset>
+                <legend>Product Image</legend>
+            
+                <label>Image Path
+                <input type="text" name="path">
+                </label>
+                <label>
+                    Image text
+                    <input type="text" name="alt">
+                </label>
+                <label>Image source
+                    <input type="text" name="source">
+                </label>
+            </fieldset>
+        </fieldest>
+
+        <fieldset>
+            <legend>Add Discount</legend>
+
+            <label>
+                Product ID
+                <input type="text" name="discountId">
+            </label>
+
+            <label>
+                Percentage Discounted
+                <input type="number" max="100" min="0.15" name="percentage">
+            </label>
+
+        </fieldset>
+
+        <button type="submit" id="submitForm">Add</button>
+        <button type="reset" id="clearForm">Clear</button>
+        
+    </form>
+    
+</body>
+</html>
